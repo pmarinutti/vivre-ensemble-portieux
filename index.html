@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Vivre Ensemble — Liste conduite par Christelle PAILLARD pour les élections municipales de Portieux–La Verrerie, 15 et 22 mars 2026.">
+<title>Vivre Ensemble — Portieux · La Verrerie — Municipales 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Source+Sans+3:wght@300;400;500;600;700;800;900&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bleu-nuit:#152d44;--bleu-profond:#1e4068;--bleu-moyen:#2e6ea6;--bleu-vif:#3d8fd4;--bleu-ciel:#7bbde8;--bleu-pale:#d6eaf8;--bleu-glace:#eef6fc;--vert-foret:#2d6a4f;--vert-mousse:#40916c;--vert-tendre:#74c69d;--vert-pale:#d8f3dc;--or-chaud:#d4a843;--or-clair:#f0d77b;--terre:#8b6f47;--corail:#e07a5f;--mauve:#7b6d8d;--rose:#c4727f;--cyan:#2a9d8f;--gris-texte:#2a2a2a;--gris-moyen:#555;--gris-clair:#888;--blanc:#fff;--creme:#faf8f5}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Source Sans 3',sans-serif;color:var(--gris-texte);background:var(--creme);line-height:1.6;overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(21,45,68,.95);backdrop-filter:blur(10px);padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:56px;box-shadow:0 2px 20px rgba(0,0,0,.15)}
+.nav-logo{font-family:'Playfair Display',serif;font-weight:800;font-size:18px;color:var(--blanc);text-decoration:none}
+.nav-logo span{font-family:'Caveat',cursive;font-weight:500;font-size:16px;color:var(--or-clair);margin-left:8px}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:rgba(255,255,255,.75);text-decoration:none;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:1px;transition:color .3s}
+.nav-links a:hover{color:var(--or-clair)}
+.nav-burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+.nav-burger span{width:24px;height:2px;background:var(--blanc);border-radius:2px;transition:.3s}
+@media(max-width:768px){.nav-links{display:none;position:absolute;top:56px;left:0;right:0;background:rgba(21,45,68,.98);flex-direction:column;padding:20px 24px;gap:16px}.nav-links.open{display:flex}.nav-burger{display:flex}}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 24px;background:linear-gradient(135deg,var(--bleu-nuit) 0%,var(--bleu-profond) 40%,#1a3a5c 100%);overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 20%,rgba(61,143,212,.15) 0%,transparent 60%),radial-gradient(ellipse at 70% 80%,rgba(45,106,79,.1) 0%,transparent 50%)}
+.hero-content{position:relative;z-index:2;max-width:700px}
+.hero-commune{font-weight:300;font-size:16px;color:var(--bleu-ciel);letter-spacing:6px;text-transform:uppercase;margin-bottom:24px;opacity:0;animation:fadeUp .8s ease .2s forwards}
+.hero-titre{font-family:'Playfair Display',serif;font-weight:800;font-size:clamp(48px,8vw,80px);color:var(--blanc);line-height:1.05;margin-bottom:16px;opacity:0;animation:fadeUp .8s ease .4s forwards}
+.hero-slogan{font-family:'Caveat',cursive;font-size:clamp(22px,4vw,32px);color:var(--or-clair);margin-bottom:32px;opacity:0;animation:fadeUp .8s ease .6s forwards}
+.hero-phrase{font-size:17px;color:rgba(255,255,255,.8);line-height:1.7;max-width:520px;margin:0 auto 40px;opacity:0;animation:fadeUp .8s ease .8s forwards}
+.hero-dates{display:inline-flex;align-items:center;gap:10px;padding:12px 28px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:50px;font-weight:600;font-size:14px;color:var(--blanc);letter-spacing:1px;opacity:0;animation:fadeUp .8s ease 1s forwards}
+.hero-photo{width:100%;max-width:600px;height:280px;margin:48px auto 0;background:linear-gradient(135deg,rgba(255,255,255,.06) 0%,rgba(255,255,255,.02) 100%);border:2px dashed rgba(255,255,255,.15);border-radius:16px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.3);font-size:14px;padding:20px;opacity:0;animation:fadeUp .8s ease 1.2s forwards}
+.hero-wave{position:absolute;bottom:-2px;left:0;right:0;z-index:3}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+section{padding:80px 24px}.section-inner{max-width:960px;margin:0 auto}
+.section-tag{font-weight:800;font-size:11px;text-transform:uppercase;letter-spacing:3px;text-align:center;margin-bottom:12px}
+.section-title{font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(28px,4vw,40px);text-align:center;color:var(--bleu-nuit);margin-bottom:16px;line-height:1.2}
+.section-subtitle{font-size:16px;color:var(--gris-moyen);text-align:center;max-width:600px;margin:0 auto 48px;line-height:1.6}
+#bilan{background:var(--blanc)}
+.chiffres{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:56px}
+.chiffre{text-align:center;padding:24px 16px;border-radius:12px;background:var(--creme);border:1px solid rgba(0,0,0,.04)}
+.chiffre-nb{font-family:'Playfair Display',serif;font-weight:800;font-size:36px;color:var(--bleu-moyen);line-height:1;margin-bottom:8px}
+.chiffre-label{font-size:13px;font-weight:600;color:var(--gris-moyen);text-transform:uppercase;letter-spacing:.5px}
+.realisations{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.realisation{padding:28px;border-radius:12px;background:var(--creme);border-left:4px solid var(--vert-mousse);transition:transform .3s,box-shadow .3s}
+.realisation:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.06)}
+.realisation-titre{font-family:'Playfair Display',serif;font-weight:700;font-size:18px;color:var(--bleu-nuit);margin-bottom:8px}
+.realisation-desc{font-size:14px;color:var(--gris-moyen);line-height:1.5}
+#programme{background:var(--creme)}
+.piliers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pilier{padding:32px 24px;border-radius:16px;background:var(--blanc);border:1px solid rgba(0,0,0,.05);text-align:center;transition:transform .3s,box-shadow .3s}
+.pilier:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.08)}
+.pilier:first-child{grid-column:1/-1;background:linear-gradient(135deg,var(--bleu-nuit),var(--bleu-profond));color:var(--blanc)}
+.pilier:first-child .pilier-titre{color:var(--or-clair)}.pilier:first-child .pilier-desc{color:rgba(255,255,255,.8)}
+.pilier-icon{font-size:32px;margin-bottom:16px}
+.pilier-titre{font-family:'Playfair Display',serif;font-weight:700;font-size:18px;color:var(--bleu-nuit);margin-bottom:12px}
+.pilier-desc{font-size:14px;color:var(--gris-moyen);line-height:1.6}
+#equipe{background:var(--blanc)}
+.colistiers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}
+.colistier{padding:20px;border-radius:12px;background:var(--creme);text-align:center;border:1px solid rgba(0,0,0,.04)}
+.colistier-nom{font-family:'Playfair Display',serif;font-weight:700;font-size:16px;color:var(--bleu-nuit);margin-bottom:4px}
+.colistier-info{font-size:13px;color:var(--gris-clair)}
+#reunions{background:var(--bleu-glace)}
+.reunions-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-bottom:32px}
+.reunion-card{padding:32px;border-radius:16px;background:var(--blanc);text-align:center;box-shadow:0 4px 16px rgba(0,0,0,.05)}
+.reunion-lieu{font-family:'Playfair Display',serif;font-weight:700;font-size:22px;color:var(--bleu-nuit);margin-bottom:12px}
+.reunion-details{font-size:15px;color:var(--gris-moyen);line-height:1.8}
+.cafe-citoyen{text-align:center;padding:20px;border-radius:12px;background:rgba(212,168,67,.1);border:1px solid rgba(212,168,67,.2)}
+.cafe-citoyen-title{font-family:'Playfair Display',serif;font-weight:700;font-size:18px;color:var(--terre);margin-bottom:4px}
+.cafe-citoyen-info{font-size:14px;color:var(--gris-moyen)}
+#contact{background:var(--creme)}
+.contact-box{max-width:500px;margin:0 auto;text-align:center;padding:48px 32px;border-radius:20px;background:var(--blanc);box-shadow:0 8px 32px rgba(0,0,0,.06)}
+.contact-icon{font-size:40px;margin-bottom:16px}
+.contact-text{font-size:15px;color:var(--gris-moyen);margin-bottom:24px;line-height:1.6}
+.contact-mail{display:inline-block;padding:14px 32px;background:var(--bleu-profond);color:var(--blanc);text-decoration:none;border-radius:8px;font-weight:700;font-size:15px;transition:background .3s}
+.contact-mail:hover{background:var(--bleu-moyen)}
+footer{background:var(--bleu-nuit);padding:24px;text-align:center}
+.footer-slogan{font-family:'Caveat',cursive;font-size:18px;color:var(--or-clair);margin-bottom:12px}
+.footer-legal{font-size:11px;color:rgba(255,255,255,.3);line-height:1.6}
+@media(max-width:768px){.chiffres{grid-template-columns:repeat(2,1fr)}.realisations{grid-template-columns:1fr}.piliers{grid-template-columns:1fr}.pilier:first-child{grid-column:1}.reunions-cards{grid-template-columns:1fr}.colistiers-grid{grid-template-columns:repeat(2,1fr)}.hero-photo{height:200px}section{padding:56px 20px}}
+@media(max-width:480px){.chiffres{grid-template-columns:1fr 1fr;gap:12px}.colistiers-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="#" class="nav-logo">Vivre Ensemble <span>· Un Souffle pour l'Avenir</span></a>
+  <ul class="nav-links">
+    <li><a href="#bilan">Bilan</a></li>
+    <li><a href="#programme">Programme</a></li>
+    <li><a href="#equipe">Équipe</a></li>
+    <li><a href="#reunions">Réunions</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-burger" onclick="document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></div>
+</nav>
+
+<section class="hero" id="accueil">
+  <div class="hero-content">
+    <div class="hero-commune">Portieux – La Verrerie</div>
+    <h1 class="hero-titre">Vivre<br>Ensemble</h1>
+    <div class="hero-slogan">Un Souffle pour l'Avenir</div>
+    <p class="hero-phrase">6 ans d'engagements tenus. Une équipe soudée, des projets concrets, et l'envie de continuer à bâtir avec vous.</p>
+    <div class="hero-dates"><span class="cal">🗳️</span> 15 et 22 mars 2026</div>
+    <div class="hero-photo">📷 Photo d'équipe à venir</div>
+  </div>
+  <svg class="hero-wave" viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 40C240 80 480 0 720 40C960 80 1200 0 1440 40V80H0V40Z" fill="var(--blanc)"/></svg>
+</section>
+
+<section id="bilan">
+  <div class="section-inner">
+    <div class="section-tag" style="color:var(--vert-mousse);">2020 — 2026</div>
+    <h2 class="section-title">Notre Bilan</h2>
+    <p class="section-subtitle">Six années d'action au service des habitants de Portieux et La Verrerie. Des projets concrets, des résultats visibles.</p>
+    <div class="chiffres">
+      <div class="chiffre"><div class="chiffre-nb">6</div><div class="chiffre-label">Années d'action</div></div>
+      <div class="chiffre"><div class="chiffre-nb">2</div><div class="chiffre-label">Communes fusionnées</div></div>
+      <div class="chiffre"><div class="chiffre-nb">1</div><div class="chiffre-label">Cristallerie sauvée</div></div>
+      <div class="chiffre"><div class="chiffre-nb">0</div><div class="chiffre-label">Hausse d'impôts</div></div>
+    </div>
+    <div class="realisations">
+      <div class="realisation"><div class="realisation-titre">🏭 Rachat de la Cristallerie</div><div class="realisation-desc">Sauvetage du patrimoine industriel et relance de la production verrière, symbole de l'identité locale.</div></div>
+      <div class="realisation"><div class="realisation-titre">🏗️ Rénovation des logements</div><div class="realisation-desc">Réhabilitation de logements en centre-bourg pour revitaliser le cœur de village.</div></div>
+      <div class="realisation"><div class="realisation-titre">🅿️ Parking du stade</div><div class="realisation-desc">Création d'un parking fonctionnel pour les équipements sportifs.</div></div>
+      <div class="realisation"><div class="realisation-titre">🌳 Square Triboulot</div><div class="realisation-desc">Aménagement d'un espace vert convivial pour les familles et les promeneurs.</div></div>
+      <div class="realisation"><div class="realisation-titre">🏥 Agence postale en mairie</div><div class="realisation-desc">Maintien du service postal de proximité directement en mairie.</div></div>
+      <div class="realisation"><div class="realisation-titre">🥖 Dépôt de pain</div><div class="realisation-desc">Installation d'un dépôt de pain pour garantir l'accès aux produits de première nécessité.</div></div>
+      <div class="realisation"><div class="realisation-titre">🚶 Parcours de santé aux étangs</div><div class="realisation-desc">Création d'un parcours de santé autour des étangs, accessible à tous.</div></div>
+      <div class="realisation"><div class="realisation-titre">🍔 Food truck hebdomadaire</div><div class="realisation-desc">Mise en place d'un food truck régulier pour diversifier l'offre alimentaire locale.</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="programme">
+  <div class="section-inner">
+    <div class="section-tag" style="color:var(--bleu-moyen);">2026 — 2032</div>
+    <h2 class="section-title">Notre Programme</h2>
+    <p class="section-subtitle">7 piliers pour continuer à construire une commune où il fait bon vivre, travailler et se retrouver.</p>
+    <div class="piliers">
+      <div class="pilier"><div class="pilier-icon">🏛️</div><div class="pilier-titre">Patrimoine &amp; Identité</div><div class="pilier-desc">Poursuivre la renaissance de la Cristallerie, valoriser la Filature, restaurer les lavoirs, enrichir la bibliothèque. Notre histoire est notre force.</div></div>
+      <div class="pilier"><div class="pilier-icon">🏡</div><div class="pilier-titre">Cadre de vie</div><div class="pilier-desc">PLU adapté, petites maisons Vosgelis, jardins partagés, embellissement des espaces publics.</div></div>
+      <div class="pilier"><div class="pilier-icon">👨‍👩‍👧‍👦</div><div class="pilier-titre">Solidarité</div><div class="pilier-desc">Maison des seniors, MAM (Maison d'Assistantes Maternelles), soutien aux associations.</div></div>
+      <div class="pilier"><div class="pilier-icon">🚶</div><div class="pilier-titre">Mobilité &amp; Services</div><div class="pilier-desc">Améliorer les liaisons entre Portieux et La Verrerie, renforcer les services de proximité.</div></div>
+      <div class="pilier"><div class="pilier-icon">🌿</div><div class="pilier-titre">Environnement</div><div class="pilier-desc">Transition écologique, gestion durable des espaces verts, économies d'énergie sur les bâtiments communaux.</div></div>
+      <div class="pilier"><div class="pilier-icon">💰</div><div class="pilier-titre">Gestion &amp; Transparence</div><div class="pilier-desc">Maîtrise des dépenses, pas de hausse d'impôts, transparence totale sur les décisions et les finances.</div></div>
+      <div class="pilier"><div class="pilier-icon">🤝</div><div class="pilier-titre">Démocratie locale</div><div class="pilier-desc">Cafés citoyens, réunions publiques, consultation des habitants sur les grands projets.</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="equipe">
+  <div class="section-inner">
+    <div class="section-tag" style="color:var(--mauve);">15 colistiers engagés</div>
+    <h2 class="section-title">Notre Équipe</h2>
+    <p class="section-subtitle">Des femmes et des hommes de terrain, au service de Portieux–La Verrerie.</p>
+    <div class="colistiers-grid">
+      <div class="colistier"><div class="colistier-nom">Christelle PAILLARD</div><div class="colistier-info">Maire sortante — Tête de liste</div></div>
+      <div class="colistier"><div class="colistier-nom">Christophe DAUBINET</div><div class="colistier-info">1er Adjoint sortant</div></div>
+      <div class="colistier"><div class="colistier-nom">Pierre BERTHOLET</div><div class="colistier-info">Archéologue</div></div>
+      <div class="colistier"><div class="colistier-nom">Colistier 4</div><div class="colistier-info">À compléter</div></div>
+      <div class="colistier"><div class="colistier-nom">Colistier 5</div><div class="colistier-info">À compléter</div></div>
+      <div class="colistier"><div class="colistier-nom">Colistier 6</div><div class="colistier-info">À compléter</div></div>
+      <div class="colistier"><div class="colistier-nom">Colistier 7</div><div class="colistier-info">À compléter</div></div>
+      <div class="colistier"><div class="colistier-nom">Colistier 8</div><div class="colistier-info">À compléter</div></div>
+      <div class="colistier"><div class="colistier-nom">Colistier 9</div><div class="colistier-info">À compléter</div></div>
+      <div class="colistier"><div class="colistier-nom">Colistier 10</div><div class="colistier-info">À compléter</div></div>
+      <div class="colistier"><div class="colistier-nom">Colistier 11</div><div class="colistier-info">À compléter</div></div>
+      <div class="colistier"><div class="colistier-nom">Colistier 12</div><div class="colistier-info">À compléter</div></div>
+      <div class="colistier"><div class="colistier-nom">Colistier 13</div><div class="colistier-info">À compléter</div></div>
+      <div class="colistier"><div class="colistier-nom">Colistier 14</div><div class="colistier-info">À compléter</div></div>
+      <div class="colistier"><div class="colistier-nom">Colistier 15</div><div class="colistier-info">À compléter</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="reunions">
+  <div class="section-inner">
+    <div class="section-tag" style="color:var(--cyan);">Rencontrons-nous</div>
+    <h2 class="section-title">Réunions publiques</h2>
+    <p class="section-subtitle">Venez poser vos questions, partager vos idées, et échanger directement avec l'équipe.</p>
+    <div class="reunions-cards">
+      <div class="reunion-card"><div class="reunion-lieu">La Verrerie</div><div class="reunion-details">Salle Magnienville<br><strong>[date à confirmer]</strong><br>à 20h</div></div>
+      <div class="reunion-card"><div class="reunion-lieu">Portieux</div><div class="reunion-details">Salle Crône<br><strong>[date à confirmer]</strong><br>à 20h</div></div>
+    </div>
+    <div class="cafe-citoyen"><div class="cafe-citoyen-title">☕ Café Citoyen</div><div class="cafe-citoyen-info">Échange informel de 16h30 à 18h · Aux mêmes dates et mêmes lieux</div></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-tag" style="color:var(--bleu-moyen);">Une question ?</div>
+    <h2 class="section-title">Contactez-nous</h2>
+    <div class="contact-box">
+      <div class="contact-icon">✉️</div>
+      <p class="contact-text">Vous avez une question, une suggestion, ou vous souhaitez vous impliquer ?<br>Écrivez-nous, nous vous répondrons personnellement.</p>
+      <a href="mailto:vivre-ensemble-portieux@gmail.com" class="contact-mail">vivre-ensemble-portieux@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-slogan">« Pas de promesses en l'air : des actes, des résultats, et l'envie de continuer pour vous. »</div>
+  <div class="footer-legal">
+    Élections municipales — 15 et 22 mars 2026 — Portieux–La Verrerie<br>
+    Liste « Vivre Ensemble — Un Souffle pour l'Avenir » conduite par Christelle PAILLARD<br>
+    Imprimé par nos soins · Ne pas jeter sur la voie publique
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));if(t){t.scrollIntoView({behavior:'smooth',block:'start'});document.querySelector('.nav-links').classList.remove('open')}})});
+</script>
+</body>
+</html>
